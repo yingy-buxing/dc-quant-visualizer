@@ -1,6 +1,6 @@
-# ETF Backtest Visualizer
+# Trading Backtest Visualizer
 
-一个基于 TradingView Lightweight Charts 的 ETF 组合回测可视化前端示例。
+一个基于 TradingView Lightweight Charts 的交易回测可视化前端示例。
 
 这个仓库只保留可展示的前端框架和脱敏后的示例数据，不包含策略训练、参数搜索、掘金 token、缓存或本地研究脚本。
 
@@ -11,7 +11,7 @@
 - 鼠标悬停成交点查看买卖成交信息
 - 官方组合收益曲线、回撤曲线和仓位提示
 - 逐笔成交列表点击联动图表
-- 各 ETF 收益贡献概览
+- 各标的收益贡献概览
 - 支持通过 `?data=...` 加载不同回测版本的 payload
 
 ## 在线展示
@@ -55,8 +55,8 @@ http://localhost:8000/
 页面读取 `window.BACKTEST_PAYLOAD`，核心字段包括：
 
 - `summary`: 官方回测指标
-- `symbols`: 可选 ETF 列表
-- `symbol_names`: ETF 名称映射
+- `symbols`: 可选标的列表
+- `symbol_names`: 标的名称映射
 - `charts`: 各标的 K 线、成交量、买卖点
 - `equity`: 组合收益曲线和每日仓位
 - `drawdown`: 回撤曲线
