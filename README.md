@@ -48,7 +48,7 @@ http://localhost:8000/
 
 ## 示例截图
 
-![20260621-032219 demo](docs/images/20260621-032219.png)
+![20260621-032219 demo](docs/images/20260621-032219-full.png)
 
 ## 数据格式
 
