@@ -3,6 +3,7 @@ __pycache__/
 Thumbs.db
 .env
 .env.*
+!.env.example
 gmcache/
 backtest_output/
 backtest_versions/

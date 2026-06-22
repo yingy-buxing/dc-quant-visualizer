@@ -2,7 +2,7 @@
 
 一个基于 TradingView Lightweight Charts 的交易回测可视化前端示例。
 
-这个仓库只保留可展示的前端框架和脱敏后的示例数据，不包含策略训练、参数搜索、掘金 token、缓存或本地研究脚本。
+这个仓库保留可展示的前端框架、脱敏后的示例数据，以及可公开的本地回测数据转换流程。不包含策略训练、参数搜索、掘金 token、缓存或本地大规模研究输出。
 
 ## 功能
 
@@ -62,6 +62,23 @@ http://localhost:8000/
 - `drawdown`: 回撤曲线
 - `trades`: 官方成交明细
 - `contribution`: 各标的收益贡献
+
+## 离线回测与数据转换
+
+可公开的本地回测辅助脚本放在 `offline_system/`：
+
+- `trace_strategy.py`: 掘金官方回测入口，导出官方成交、订单、信号和指标
+- `export_multi_etf_data.py`: 生成可视化所需行情和组合数据
+- `render_lightweight_visualization.py`: 生成 `payload.js` 和可交互 HTML
+- `record_backtest_version.py`: 保存回测版本快照
+
+运行前需要自行设置掘金 token：
+
+```powershell
+$env:GM_TOKEN="your_gm_token_here"
+```
+
+详细说明见 `offline_system/README.md`。
 
 ## 不包含内容
 
