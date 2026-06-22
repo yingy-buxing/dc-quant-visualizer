@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+gmcache/
+backtest_output/
+backtest_versions/
+*.log
+node_modules/

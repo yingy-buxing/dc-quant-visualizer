@@ -1,0 +1,14 @@
+{
+  "version_id": "20260621-032219",
+  "created_at": "2026-06-21T03:22:19+08:00",
+  "note": "Example payload for the public ETF backtest visualizer demo.",
+  "metrics": {
+    "official_return": 0.8030020899541832,
+    "official_annual_return": 0.1337725982808201,
+    "official_max_drawdown": 0.09222271229226597,
+    "official_sharpe": 1.6575119931197193,
+    "official_win_ratio": 0.8697478991596639,
+    "execution_count": 511
+  },
+  "data_file": "payload.js"
+}
